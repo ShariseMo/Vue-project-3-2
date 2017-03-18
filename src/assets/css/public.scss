@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size:0.35rem;
+}
+body,ul{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style-type:none;
+}
+
+.clear{
+    clear:both;
+}
+
+
+/*产品详情*/
+.pro_list{
+    width:98%;
+    margin:0 auto;
+    .pro_item{
+        float:left;
+        width:48%;
+        margin:1%;
+        padding:0.25rem;
+        background:#fff;  
+        img{max-width:80%;height:1.8rem;}
+        p{margin:0.2rem;}
+        .price_sale{color:#ccc;}
+        .price_discount{color:#f60;}
+    }
+}
+
