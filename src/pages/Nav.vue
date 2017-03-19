@@ -14,7 +14,7 @@
         name:"nav",
         data:function(){
             return {
-                
+
             }
         },
     };
@@ -43,7 +43,7 @@
             border-right:1px solid #fff;
             background:#eee;
             img{
-                width:45%; 
+                width:45%;
             }
         }
         li:last-child{border:0;}

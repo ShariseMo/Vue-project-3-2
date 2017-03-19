@@ -1,7 +1,7 @@
 <template>
     <div class="page">
         <div class="banner">
-            <img src="../assets/img/banner/banner01.png">    
+            <img src="../assets/img/banner/banner01.png">
         </div>
         <ul class="type_box1">
             <li class="type_active">最热</li>
@@ -94,6 +94,8 @@
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/mixins';
+
     .page{overflow:hidden;background:#F1F2F6;}
     .banner{
       height:3.5rem;
@@ -132,7 +134,7 @@
             img{width:95%;}
         }
     }
-  
+
     h3.box_title{
         margin:0.3rem 0 0.1rem 0;
         text-align:center;

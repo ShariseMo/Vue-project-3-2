@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
 
 Vue.use(Router)
 
@@ -14,19 +13,19 @@ export default new Router({
     {
         path: "/",
         name: "login",
-        component : require('@/components/Login')
+        component : require('@/pages/Login')
     },{
         path:"/home",
         name:"home",
-        component : require("@/components/Home")
+        component : require("@/pages/Home")
     },{
         path:"/banner",
         name:"home",
-        component: require("@/components/Banner")
+        component: require("@/pages/Banner")
     },{
         path:"/nav",
         name:"nav",
-        component: require("@/components/Nav")
+        component: require("@/pages/Nav")
     }
   ]
 })
