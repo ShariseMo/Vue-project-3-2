@@ -11,21 +11,30 @@ export default new Router({
     //   component: Hello
     // }
     {
-        path: "/",
-        name: "login",
-        component : require('@/pages/Login')
-    },{
-        path:"/home",
-        name:"home",
-        component : require("@/pages/Home")
-    },{
-        path:"/banner",
-        name:"home",
-        component: require("@/pages/Banner")
-    },{
-        path:"/nav",
-        name:"nav",
-        component: require("@/pages/Nav")
-    }
+      path: "/",
+      name: "login",
+      component: require('@/pages/Login')
+    },
+    {
+      path: "/layouts",
+      component: require('@/pages/layouts'),
+      children: [{
+          path: "home",
+          name: "home",
+          component: require("@/pages/Home")
+        },
+        {
+          path: "banner",
+          name: "banner",
+          component: require("@/pages/Banner")
+        },
+        {
+          path: "/",
+          redirect: 'home'
+        },
+
+      ]
+    },
+
   ]
 })

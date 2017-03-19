@@ -66,20 +66,21 @@ npm run build
 │   ├── App.vue
 │   ├── assets
 │   │   ├── css
-│   │   ├── img
-│   │   └── js
+│   │   └── img
 │   ├── components
 │   │   ├── Hello.vue
+│   │   ├── Nav.vue
 │   │   └── Search.vue
 │   ├── main.js
 │   ├── pages
 │   │   ├── Banner.vue
 │   │   ├── Home.vue
 │   │   ├── Login.vue
-│   │   └── Nav.vue
+│   │   └── layouts.vue
 │   ├── router
 │   │   └── index.js
 │   └── styles
+│       ├── _common.scss
 │       ├── _flex.scss
 │       ├── _mixins.scss
 │       └── index.scss

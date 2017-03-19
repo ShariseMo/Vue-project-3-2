@@ -4,7 +4,7 @@
             <form>
                 <p>userName : <input type="text" name="userName"></p>
                 <p>passWord : <input type="text" name="passWord"></p>
-                <router-link to="nav"><p><button>Login</button></p></router-link>
+                <router-link to="layouts"><p><button>Login</button></p></router-link>
             </form>
         </div>
     </div>
@@ -19,7 +19,7 @@
             }
         },
         methods:{
-            
+
         }
     };
 
@@ -55,7 +55,7 @@
             border:0;
             color:#131639;
         }
-        
+
     }
 }
 

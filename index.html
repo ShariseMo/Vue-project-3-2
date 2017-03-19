@@ -4,7 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>vue-2017-3-2</title>
-    <!-- <link rel="stylesheet" type="text/css" href="./src/assets/css/public.css"> -->
+    <script>
+      var b = document.documentElement,
+      a = function () {
+          var a = b.getBoundingClientRect().width;
+          b.style.fontSize = (100/750) * (a >= 750 ? 750 : a) + "px"
+      }, c = null;
+      window.addEventListener("resize", function () {
+          clearTimeout(c);
+          c = setTimeout(a, 300)
+      });
+      a();
+    </script>
   </head>
   <body>
     <div id="app"></div>
