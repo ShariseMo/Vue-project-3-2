@@ -32,6 +32,11 @@ export default new Router({
           path: "/",
           redirect: 'home'
         },
+        {
+          path:"classify",
+          name:"classify",
+          component:require("@/pages/Classify")
+        }
 
       ]
     },

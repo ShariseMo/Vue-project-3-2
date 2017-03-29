@@ -4,7 +4,7 @@
       <img src="../assets/img/banner/banner01.png">
     </div>
     <ul class="type_box1">
-      <li class="type_active">最热</li>
+      <li class="type_active" @click="">最热</li>
       <li>类型</li>
       <li>空间</li>
       <li>风格</li>
@@ -88,6 +88,18 @@
     },
     methods: {
 
+    },
+    beforeCreate(){
+console.log('beforeCreated')
+    },
+    create(){
+console.log('created')
+    },
+    beforeMounted(){
+console.log('beforeMounted')
+    },
+    mounted() {
+      console.log('mounted')
     }
   }
 
@@ -97,6 +109,7 @@
   @import '../styles/mixins';
   .page {
     overflow: hidden;
+    padding-bottom:1.2rem;
     background: #F1F2F6;
   }
 

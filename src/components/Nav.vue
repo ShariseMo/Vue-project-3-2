@@ -5,7 +5,7 @@
         <router-link to="/layouts/home"><img src="../assets/img/icon/home.png"></router-link>
       </li>
       <li>
-        <router-link to="/layouts/banner"><img src="../assets/img/icon/camp.png"></router-link>
+        <router-link to="/layouts/classify"><img src="../assets/img/icon/camp.png"></router-link>
       </li>
       <li>
         <router-link to="/layouts/banner"><img src="../assets/img/icon/pic.png"></router-link>
@@ -44,7 +44,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 1rem;
     background: #fff;
     ul {
       margin-left: -10px;
